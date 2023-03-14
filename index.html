@@ -17,20 +17,36 @@
 </head>
 <body>
     <header class="header">
-        <header class="header-container">
+        <div class="header-container">
             <a href="#">
                 <img src="src/images/logo.png" alt="Logo da página">
             </a>
 
             <nav>
-                <input type="checkbox" id="menu-hamburguer">
+                <input type="checkbox" id="menu-hamburguer" />
+                
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
 
-
-
-
-
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
             </nav>
-        </header>
+        </div>
     </header>
+
+    <section class="home">
+        <h2>Faça seu pedido</h2>
+        <div class="btn-pedido">
+            <button><a href="#">Whatsapp</a></button>
+            <button><a href="#">Ifood</a></button>
+        </div>
+    </section>
+    
 </body>
 </html>
