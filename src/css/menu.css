@@ -1,3 +1,12 @@
+.header .logo a{
+    background-color: brown;
+    display: flex;
+}
+
+.header img {
+    max-width: 120px;
+}
+
 .header nav ul {
     background-color: violet;
     display: flex;
@@ -5,5 +14,5 @@
 
 .header nav ul li a {
     background-color: aqua;
-    
+
 }
