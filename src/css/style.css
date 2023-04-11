@@ -145,3 +145,14 @@ body {
     background: url('../images/comida_1.png') center center no-repeat;
     background-size: cover;
 }
+
+@media (max-width: 425px) {
+    .sobre .item {
+        text-align: center;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
