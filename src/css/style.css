@@ -30,13 +30,54 @@ body {
 }
 
 .header h1 {
-    color: #ffffff;
-    font-size: 4.5rem;
-    font-weight: 500;
+    color: rgb(250, 8, 56);
+    font-size: 5.5rem;
+    font-weight: 700;
     font-family: 'Dancing Script', cursive;
     transition: 0.3s;
 }
 
 .header a:hover h1 {
-    color: yellow;
+    color: #fff;
+}
+
+.hero {
+    grid-area: hero;
+    height: 89vh;
+    background: url('../images/home.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero  h2 {
+    color:#fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.hero .btn-pedidos button{
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+.hero .btn-pedidos .whatsapp {
+    background-color: #34af23;
+}
+
+.hero .btn-pedidos .whatsapp a{
+    color: #fff;
+}
+
+.hero .btn-pedidos .ifood {
+    background-color: #D9293A;
+}
+
+.hero .btn-pedidos .ifood a{
+    color: #fff;
 }
