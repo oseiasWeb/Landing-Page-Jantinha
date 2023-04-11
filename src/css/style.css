@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-    background-color: black;
+    background-color: rgb(44, 42, 42);
     grid-area: header;
 }
 
@@ -30,21 +30,17 @@ body {
 }
 
 .header h1 {
-    color: rgb(250, 8, 56);
+    color: #fff;
     font-size: 5.5rem;
     font-weight: 700;
     font-family: 'Dancing Script', cursive;
     transition: 0.3s;
 }
 
-.header a:hover h1 {
-    color: #fff;
-}
-
 .hero {
     grid-area: hero;
     height: 89vh;
-    background: url('../images/home.jpg') center center no-repeat;
+    background: url('../images/home.png') center center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -80,4 +76,27 @@ body {
 
 .hero .btn-pedidos .ifood a{
     color: #fff;
+}
+
+@media (max-width: 425px){
+    .header .logo {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h2 {
+        margin-left: 10px;
+        font-size: 5rem;
+    }
+
+    .hero .btn-pedidos button{
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin: 5px;
+    }
 }
