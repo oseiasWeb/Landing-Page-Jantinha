@@ -7,8 +7,8 @@ body {
     grid-template-areas: "header header header header"
                          "hero hero hero hero"
                          "sobre sobre sobre sobre"
-                         "services services services services"
-                         "projects projects projects projects"
+                         "cardapio cardapio cardapio cardapio"
+                         "contatos contatos contatos contatos"
                          "footer footer footer footer";
     grid-template-columns: repeat(4, 1fr);
     font-size: 1.6rem;
@@ -137,7 +137,7 @@ body {
 }
 
 .sobre .image.right {
-    background: url('../images/comida_2.png') center center no-repeat;
+    background: url('../images/foto-perfil.png') center center no-repeat;
     background-size: cover;
 }
 
@@ -155,4 +155,148 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
     }
+}
+
+.cardapios {
+    grid-area: cardapio;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.cardapios .cardapio {
+    padding: 70px 20px;
+}
+
+.cardapios .cardapio img {
+    width: 280px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.cardapios .cardapio h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.cardapios .cardapio ul li{
+    font-size: 2.3rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 20px auto 0;
+    line-height: 25px;
+}
+
+.cardapios .cardapio:nth-child(1){
+    background-color: #f3bea1;
+}
+
+.cardapios .cardapio:nth-child(2) {
+    background-color: #f3f0e7;
+}
+
+@media (max-width: 425px) {
+    .cardapios {
+        grid-template-columns: 1fr;
+    }
+
+    .cardapios .cardapio img {
+        width: 200px;
+    }
+
+    .cardapios .cardapio h3 {
+        font-size: 2.5rem;
+    }
+    
+    .cardapios .cardapio ul li{
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    .cardapios .cardapio {
+        padding: 50px 20px;
+    }
+}
+
+.contatos {
+    grid-area: contatos;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contatos img {
+    height: 100%;
+    transition: 0.3s;
+}
+
+.contatos a:hover img {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px){
+    .contatos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .contatos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    background-color: #660000;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.footer h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+}
+
+.footer nav {
+    margin: 50px 0;
+}
+
+.footer nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.footer nav ul li a {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0 20px;
+    transition: 0.3s;
+    color: rgb(241, 241, 131);
+}
+
+.footer nav ul li a:hover {
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer .social a i {
+    font-size: 2.8rem;
+    margin: 0 10px;
+    color: rgb(241, 241, 131);
+    transition: 0.3s ease;
+}
+
+.footer .social a i:hover {
+    font-weight: 500;
+    color: #fff;
 }
